@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "3b6c62ca-0434-43fe-b63a-ca101a1247b0",
+		"name": "openweathermap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetKiev",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "29ca0679-9c75-48d6-8003-8d55f475aa89",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Kiev&APPID=8e23f2987bb8a90a12e05b551ca807f5",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kiev"
+						},
+						{
+							"key": "APPID",
+							"value": "8e23f2987bb8a90a12e05b551ca807f5"
+						},
+						{
+							"key": "q",
+							"value": "London",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetKievendkodstrany",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c6ab8e8d-580c-4821-a664-1c7cf830fa4c",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Kyiv,UKR&APPID=8e23f2987bb8a90a12e05b551ca807f5",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Kyiv,UKR"
+						},
+						{
+							"key": "APPID",
+							"value": "8e23f2987bb8a90a12e05b551ca807f5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetKievpoKodu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "70a0a069-6a97-44ce-9b6a-af48238f4471",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=703448&APPID=8e23f2987bb8a90a12e05b551ca807f5",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "703448"
+						},
+						{
+							"key": "APPID",
+							"value": "8e23f2987bb8a90a12e05b551ca807f5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetKievpoKOORDINATAM",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fe26f2d8-aef3-4401-8047-4bfc572cd653",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lat=50.43&lon=30.52&APPID=8e23f2987bb8a90a12e05b551ca807f5",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50.43"
+						},
+						{
+							"key": "lon",
+							"value": "30.52"
+						},
+						{
+							"key": "APPID",
+							"value": "8e23f2987bb8a90a12e05b551ca807f5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetKiev_po_Indexu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Prjamougolnik",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "576877b2-1c30-4cf3-997c-9a60942d67aa",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/box/city?bbox=28,49,33,51,10&APPID=8e23f2987bb8a90a12e05b551ca807f5",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"box",
+						"city"
+					],
+					"query": [
+						{
+							"key": "bbox",
+							"value": "28,49,33,51,10"
+						},
+						{
+							"key": "APPID",
+							"value": "8e23f2987bb8a90a12e05b551ca807f5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Goroda_v_cikle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e498010c-839a-453a-99b9-544c82cc4e8e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/find?lat=50.43&lon=30.52&cnt=10&APPID=8e23f2987bb8a90a12e05b551ca807f5",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"find"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "50.43"
+						},
+						{
+							"key": "lon",
+							"value": "30.52"
+						},
+						{
+							"key": "cnt",
+							"value": "10"
+						},
+						{
+							"key": "APPID",
+							"value": "8e23f2987bb8a90a12e05b551ca807f5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Neskolko_ind",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1917b77d-69cc-4b49-9c5c-5e8dc737949e",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/group?id=711349,702550,707716&units=metric&APPID=8e23f2987bb8a90a12e05b551ca807f5",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "711349,702550,707716"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "APPID",
+							"value": "8e23f2987bb8a90a12e05b551ca807f5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
